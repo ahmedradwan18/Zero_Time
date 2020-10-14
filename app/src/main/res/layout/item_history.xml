@@ -84,6 +84,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textColor="#428bca"
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -148,6 +150,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textColor="#428bca"
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -340,6 +344,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textColor="#428bca"
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -419,6 +425,8 @@
                             android:text="جنيه مصرى"
                             android:textColor="#428bca"
                             android:textSize="@dimen/_12ssp"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/History_price_value"
                             app:layout_constraintTop_toTopOf="parent" />

@@ -78,6 +78,8 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <TextView
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:id="@+id/followingOrder_name_value"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -147,6 +149,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textColor="#428bca"
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -211,6 +215,8 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textColor="#428bca"
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -276,6 +282,8 @@
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
                             android:textColor="#428bca"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/followingOrder_description_text"
@@ -340,6 +348,8 @@
                             android:fontFamily="@font/changa_medium"
                             android:text="كريم القصاص"
                             android:textColor="#428bca"
+                            android:layout_marginStart="@dimen/_8sdp"
+
                             android:textSize="@dimen/_12ssp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@id/followingOrder_price_text"

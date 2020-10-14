@@ -118,6 +118,7 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
+                                android:layout_marginStart="@dimen/_8sdp"
                                 android:id="@+id/clerks_name_value"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -180,6 +181,8 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
+                                android:layout_marginStart="@dimen/_8sdp"
+
                                 android:id="@+id/clerks_primary_phone_value"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -242,6 +245,8 @@
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
+                                android:layout_marginStart="@dimen/_8sdp"
+
                                 android:id="@+id/clerks_secondary_phone_value"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -310,6 +315,8 @@
                                 android:scrollbars="none"
                                 >
                                 <TextView
+                                    android:layout_marginStart="@dimen/_8sdp"
+
                                     android:id="@+id/clerks_address_value"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -379,6 +386,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="كريم القصاص"
+                                android:layout_marginStart="@dimen/_8sdp"
+
                                 android:textColor="#428bca"
                                 android:textSize="@dimen/_12ssp"
                                 android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
@@ -440,6 +449,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="كريم القصاص"
+                                android:layout_marginStart="@dimen/_8sdp"
+
                                 android:textColor="#428bca"
                                 android:textSize="@dimen/_12ssp"
                                 android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
