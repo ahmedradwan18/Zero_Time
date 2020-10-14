@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf2fe"
+    android:layoutDirection="ltr"
+    tools:context=".Moderator.ModeratorHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraint1">
+
+        <Button
+            android:id="@+id/Moderator_Home_Orders_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/tajwal"
+            android:text="@string/new_orders_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Moderator_Home_addClerk_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Moderator_Home_addClerk_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/tajwal"
+            android:text="@string/add_clerk_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintEnd_toStartOf="@id/Moderator_Home_Orders_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/Moderator_Home_viewClerks_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/tajwal"
+            android:text="@string/display_clerks_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Moderator_Home_addOffers_btn"
+            app:layout_constraintTop_toBottomOf="@+id/Moderator_Home_Orders_btn" />
+
+        <Button
+            android:id="@+id/Moderator_Home_addOffers_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/tajwal"
+            android:text="@string/add_offers_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintEnd_toStartOf="@id/Moderator_Home_viewClerks_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Moderator_Home_addClerk_btn" />
+
+        <Button
+            android:id="@+id/Moderator_Home_complaints_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/tajwal"
+            android:text="@string/display_complaints_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Moderator_Home_NumberOFOrders_btn"
+            app:layout_constraintTop_toBottomOf="@+id/Moderator_Home_viewClerks_btn" />
+
+        <Button
+            android:id="@+id/Moderator_Home_NumberOFOrders_btn"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@drawable/btn_back"
+            android:fontFamily="@font/tajwal"
+            android:text="@string/users_orders_count_hint"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            app:layout_constraintEnd_toStartOf="@id/Moderator_Home_complaints_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Moderator_Home_addOffers_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

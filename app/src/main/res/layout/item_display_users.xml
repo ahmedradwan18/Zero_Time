@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/display_users_row_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ecf2fe"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    android:layout_margin="@dimen/_6sdp"
+    android:layoutDirection="ltr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/display_users_row_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:text="اسم المرسل"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:src="@drawable/avatar1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/display_users_row_user_name" />
+
+        <TextView
+            android:id="@+id/display_users_row_last_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:maxLines="1"
+            android:text="اخر رساله"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/display_users_row_user_name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

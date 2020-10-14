@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf2fe"
+    android:layoutDirection="ltr"
+    tools:context=".User.Home">
+
+    <FrameLayout
+        android:id="@+id/Frame_Content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layoutDirection="ltr"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ecf2fe"
+        android:elevation="@dimen/_4sdp"
+        android:padding="@dimen/_12sdp"
+        app:bnc_mode="spread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home_bottom_nav_setting_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36sdp"
+            app:bt_colorActive="#808080"
+            app:bt_colorInactive="#A8A8A8"
+            app:bt_icon="@drawable/ic_baseline_settings_24"
+            app:bt_padding="@dimen/default_nav_item_padding"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="الاعدادت"
+            app:bt_titlePadding="@dimen/default_nav_item_text_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/home_bottom_nav_contact_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home_bottom_nav_contact_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36sdp"
+            app:bt_colorActive="#277C27"
+            app:bt_colorInactive="#5cb85c"
+            app:bt_icon="@drawable/ic_baseline_call_24"
+            app:bt_padding="@dimen/default_nav_item_padding"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="تواصل"
+            app:bt_titlePadding="@dimen/default_nav_item_text_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/home_bottom_nav_personal_item"
+            app:layout_constraintStart_toEndOf="@id/home_bottom_nav_setting_item"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home_bottom_nav_personal_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36sdp"
+            app:bt_colorActive="#DD0707"
+            app:bt_colorInactive="#FA3434"
+            app:bt_icon="@drawable/ic_baseline_person_pin_24"
+            app:bt_padding="@dimen/default_nav_item_padding"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="الشخصيه"
+            app:bt_titlePadding="@dimen/default_nav_item_text_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/home_bottom_nav_home_item"
+            app:layout_constraintStart_toEndOf="@id/home_bottom_nav_contact_item"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/home_bottom_nav_home_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36sdp"
+            app:bt_active="true"
+            app:bt_colorActive="#3F51B5"
+            app:bt_colorInactive="#4F62CD"
+            app:bt_icon="@drawable/ic_baseline_home_24"
+            app:bt_padding="@dimen/default_nav_item_padding"
+            app:bt_shape="@drawable/transition_background_drawable"
+            app:bt_title="الرئيسية"
+            app:bt_titlePadding="@dimen/default_nav_item_text_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/home_bottom_nav_personal_item"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+</androidx.constraintlayout.widget.ConstraintLayout>

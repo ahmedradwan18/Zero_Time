@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "361023072766",
+    "firebase_url": "https://zero-time-2020.firebaseio.com",
+    "project_id": "zero-time-2020",
+    "storage_bucket": "zero-time-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361023072766:android:b63f5a812a59a382aab8af",
+        "android_client_info": {
+          "package_name": "com.zerotime.zerotime2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361023072766-515onm7gult09plna2kfc21opdpg93r9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zerotime.zerotime2020",
+            "certificate_hash": "4f76ae820daa241fd9bc4dce50f022c8d29794f1"
+          }
+        },
+        {
+          "client_id": "361023072766-52jcfbaq82crls6m787vkq75grgd1acd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXKYF8QmBeta44UVAFJUfIZzDla3D2dJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361023072766-52jcfbaq82crls6m787vkq75grgd1acd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Frame_Content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <ScrollView
+        android:background="#ecf2fe"
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_order_description_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_order_description_hint"
+                android:inputType="text"
+                android:textAlignment="viewEnd"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_order_price_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_order_price_hint"
+                android:inputType="numberDecimal"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_order_description_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_arrival_date_notes_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_order_notes_hint"
+                android:inputType="text"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_order_price_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_receiver_name_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_receiver_name_hint"
+                android:inputType="textPersonName"
+                android:textAlignment="viewEnd"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_arrival_date_notes_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_receiver_primary_phone_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_receiver_primary_phone_hint"
+                android:inputType="number"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                android:textAlignment="viewEnd"
+                android:letterSpacing="0.15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_receiver_name_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_receiver_secondary_phone_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_receiver_secondary_phone_hint"
+                android:inputType="number"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                android:textAlignment="viewEnd"
+                android:letterSpacing="0.15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_receiver_primary_phone_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addOrder_receiver_address_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/add_order_edit_text_back"
+                android:fontFamily="@font/tajwal"
+                android:hint="@string/add_order_receiver_address_hint"
+                android:inputType="text"
+                android:textColor="#005b96"
+                android:textColorHint="#005b96"
+                android:textSize="@dimen/_12ssp"
+                android:textAlignment="viewEnd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_receiver_secondary_phone_edit_text" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/addOrder_order_size_radio_group_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_receiver_address_edit_text"
+                android:layoutDirection="ltr">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/changa_medium"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/addOrder_small_order_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:buttonTint="#005b96"
+                        android:fontFamily="@font/changa_medium"
+                        android:gravity="start"
+                        android:text="@string/small"
+                        android:textColor="#005b96"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/addOrder_medium_order_radio_btn"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:buttonTint="#005b96"
+                        android:fontFamily="@font/changa_medium"
+                        android:text="@string/medium"
+                        android:textColor="#005b96"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioButton
+                        android:id="@+id/addOrder_big_order_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:buttonTint="#005b96"
+                        android:fontFamily="@font/changa_medium"
+                        android:text="@string/big"
+                        android:textColor="#005b96"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/addOrder_request_btn"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:background="@drawable/add_order_btn_back"
+                android:fontFamily="@font/tajwal"
+                android:text="@string/add_order_order_button_hint"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addOrder_order_size_radio_group_layout" />
+
+            <FrameLayout
+                android:id="@+id/addOrder_progressBarHolder"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0.4"
+                android:animateLayoutChanges="true"
+                android:background="#000000"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:indeterminate="true" />
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

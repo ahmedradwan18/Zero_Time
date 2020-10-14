@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Frame_Content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf2fe"
+    android:layoutDirection="ltr">
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ecf2fe"
+
+            android:padding="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/aboutUs_our_team_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_48sdp"
+                android:fontFamily="serif"
+                android:text="@string/zero_time_txt"
+                android:textColor="@color/DarkBlue"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/aboutUs_members_pics_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutUs_our_team_text">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/aboutUs_logo"
+                    android:layout_width="@dimen/_86sdp"
+                    android:layout_height="@dimen/_86sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pnglogo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/aboutUs_missions_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/tajwal"
+                android:text="@string/about_us_txt"
+                android:textColor="@color/DarkBlue"
+                android:textSize="@dimen/_32ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutUs_members_pics_layout" />
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aboutUs_missions_text"
+                tools:ignore="NestedScrolling">
+
+
+                <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/expand_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    expandableTextView:animDuration="200"
+                    expandableTextView:layout_constraintTop_toBottomOf="@+id/aboutUs_missions_text"
+                    expandableTextView:maxCollapsedLines="4">
+
+                    <TextView
+                        android:id="@id/expandable_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/DarkBlue"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:background="@android:color/transparent"
+                        android:padding="16dp"
+                        tools:ignore="ContentDescription" />
+                </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+            </ScrollView>
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/aboutUs_map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scroll" />
+
+            <TextView
+                android:id="@+id/aboutUs_address_value_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:fontFamily="@font/aldrich"
+                android:text="@string/our_location_txt"
+                android:textColor="@color/DarkBlue"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/aboutUs_map" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

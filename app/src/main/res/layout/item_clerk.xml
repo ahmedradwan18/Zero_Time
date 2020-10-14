@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ecf2fe"
+    android:layoutDirection="ltr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clerks_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_delete_sweep_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@id/clerks_view_background"
+            app:layout_constraintEnd_toEndOf="@id/clerks_view_background"
+            app:layout_constraintTop_toTopOf="@id/clerks_view_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="مسح"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_22ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/delete_icon"
+            app:layout_constraintEnd_toStartOf="@id/delete_icon"
+            app:layout_constraintTop_toTopOf="@id/delete_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/clerks_view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:background="#EFEEEE">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clerks_cards_constraint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/clerks_name_card"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardBackgroundColor="#FFF"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/clerks_name_icon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_username_icon"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/clerks_name_line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:background="#005b96"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_name_icon" />
+
+                            <TextView
+                                android:id="@+id/clerks_name_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:text="اسم المندوب : "
+                                android:textColor="#005b96"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_name_line"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/clerks_name_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="كريم القصاص"
+                                android:textColor="#428bca"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_name_text"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/clerks_primary_phone_card"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardBackgroundColor="#FFF"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clerks_name_card"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/clerks_primary_phone_icon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_call_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/clerks_primary_phone_line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:background="#005b96"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_primary_phone_icon" />
+
+                            <TextView
+                                android:id="@+id/clerks_primary_phone_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:text="هاتف المندوب : "
+                                android:textColor="#005b96"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_primary_phone_line"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/clerks_primary_phone_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="كريم القصاص"
+                                android:textColor="#428bca"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_primary_phone_text"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/clerks_secondary_phone_card"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardBackgroundColor="#FFF"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clerks_primary_phone_card"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/clerks_secondary_phone_icon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_call_blue"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/clerks_secondary_phone_line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:background="#005b96"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_secondary_phone_icon" />
+
+                            <TextView
+                                android:id="@+id/clerks_secondary_phone_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:text="هاتف المندوب : "
+                                android:textColor="#005b96"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_secondary_phone_line"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/clerks_secondary_phone_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="كريم القصاص"
+                                android:textColor="#428bca"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_secondary_phone_text"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/clerks_address_card"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardBackgroundColor="#FFF"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clerks_secondary_phone_card"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/clerks_address_icon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_outline_location_on_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/clerks_address_line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:background="#005b96"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_address_icon" />
+
+                            <TextView
+                                android:id="@+id/clerks_address_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:text="عنوان المندوب : "
+                                android:textColor="#005b96"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_address_line"
+                                app:layout_constraintTop_toTopOf="parent" />
+                            <HorizontalScrollView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_address_text"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:scrollbars="none"
+                                >
+                                <TextView
+                                    android:id="@+id/clerks_address_value"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="كريم القصاص"
+                                    android:textColor="#428bca"
+                                    android:textSize="@dimen/_12ssp"
+                                    android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toStartOf="@id/clerks_address_text"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    android:layout_gravity="end|center_vertical"/>
+
+                            </HorizontalScrollView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/clerks_age_card"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardBackgroundColor="#FFF"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clerks_address_card"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/clerks_age_icon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_age_6141542"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/clerks_age_line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:background="#005b96"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_age_icon" />
+
+                            <TextView
+                                android:id="@+id/clerks_age_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:text="سن المندوب : "
+                                android:textColor="#005b96"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_age_line"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/clerks_age_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="كريم القصاص"
+                                android:textColor="#428bca"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_age_text"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/clerks_vehicle_card"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:theme="@style/Theme.MaterialComponents.Light"
+                        app:cardBackgroundColor="#FFF"
+                        app:cardCornerRadius="@dimen/_4sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clerks_age_card"
+                        android:layout_marginTop="@dimen/_2sdp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/clerks_vehicle_icon"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_baseline_motorcycle_24"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <View
+                                android:id="@+id/clerks_vehicle_line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:background="#005b96"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_vehicle_icon" />
+
+                            <TextView
+                                android:id="@+id/clerks_vehicle_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:text=" يمتلك وسيله تنقل ؟ : "
+                                android:textColor="#005b96"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_vehicle_line"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/clerks_vehicle_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="كريم القصاص"
+                                android:textColor="#428bca"
+                                android:textSize="@dimen/_12ssp"
+                                android:fontFamily="@font/changa_medium"                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/clerks_vehicle_text"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+                    <Button
+                        android:id="@+id/clerks_arrowBtn"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/clerks_vehicle_card"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clerks_expandableView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clerks_arrowBtn"
+                        app:layout_constraintBottom_toBottomOf="parent">
+
+                        <ImageView
+                            android:id="@+id/clerks_callClerk_img"
+                            android:layout_width="@dimen/_36sdp"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_marginStart="@dimen/_32sdp"
+                            android:layout_marginTop="@dimen/_22sdp"
+                            android:src="@drawable/ic_baseline_local_phone_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/clerks_ViewOrders_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_32sdp"
+                            android:background="@drawable/btn_back"
+                            android:elevation="4dp"
+                            android:padding="@dimen/_4sdp"
+                            android:text="عرض الطلبات "
+                            android:textColor="#FFF"
+                            app:layout_constraintBottom_toBottomOf="@+id/clerks_callClerk_img"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/clerks_callClerk_img"
+
+                            />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

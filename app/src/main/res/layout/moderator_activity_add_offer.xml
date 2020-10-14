@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#595a5b"
+    android:layoutDirection="ltr"
+    tools:context=".Moderator.ModeratorAddOffer">
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/moderator_add_offer_first_fixed_offer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:fontFamily="@font/changa_medium"
+                android:text="@string/first_offer_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moderator_add_offer_first_fixed_offer_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/tajwal"
+                android:gravity="top"
+                android:hint="@string/first_offer_hint"
+                android:padding="@dimen/_12sdp"
+                android:textColorHint="#535353"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_first_fixed_offer_text_view" />
+
+
+            <TextView
+                android:id="@+id/moderator_add_offer_second_fixed_offer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:fontFamily="@font/changa_medium"
+                android:text="@string/second_offer_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_first_fixed_offer_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moderator_add_offer_second_fixed_offer_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/tajwal"
+                android:gravity="top"
+                android:hint="@string/second_offer_hint"
+                android:padding="@dimen/_12sdp"
+                android:textColorHint="#535353"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_second_fixed_offer_text_view" />
+
+
+            <TextView
+                android:id="@+id/moderator_add_offer_third_fixed_offer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:fontFamily="@font/changa_medium"
+                android:text="@string/third_offer_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_second_fixed_offer_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moderator_add_offer_third_fixed_offer_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/tajwal"
+                android:gravity="top"
+                android:hint="@string/third_offer_hint"
+                android:padding="@dimen/_12sdp"
+                android:textColorHint="#535353"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_third_fixed_offer_text_view" />
+
+
+            <TextView
+                android:id="@+id/moderator_add_offer_fourth_fixed_offer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:fontFamily="@font/changa_medium"
+                android:text="@string/fourth_offer_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_third_fixed_offer_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moderator_add_offer_fourth_fixed_offer_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/tajwal"
+                android:gravity="top"
+                android:hint="@string/fourth_offer_hint"
+                android:padding="@dimen/_12sdp"
+                android:textColorHint="#535353"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_fourth_fixed_offer_text_view" />
+
+
+            <TextView
+                android:id="@+id/moderator_add_offer_fifth_fixed_offer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:fontFamily="@font/changa_medium"
+                android:text="@string/fifth_offer_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_fourth_fixed_offer_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moderator_add_offer_fifth_fixed_offer_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/tajwal"
+                android:gravity="top"
+                android:hint="@string/fifth_offer_hint"
+                android:padding="@dimen/_12sdp"
+                android:textColorHint="#535353"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_fifth_fixed_offer_text_view" />
+
+
+            <TextView
+                android:id="@+id/moderator_add_offer_sixth_fixed_offer_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:fontFamily="@font/changa_medium"
+                android:text="@string/sixth_offer_txt"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_fifth_fixed_offer_edit_text" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/moderator_add_offer_sixth_fixed_offer_edit_text"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/tajwal"
+                android:gravity="top"
+                android:hint="@string/sixth_offer_hint"
+                android:padding="@dimen/_12sdp"
+                android:textColorHint="#535353"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_sixth_fixed_offer_text_view" />
+
+            <Button
+                android:id="@+id/moderator_add_offer_sixth_update_btn"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/edit_text_back_corner_less"
+                android:fontFamily="@font/changa_medium"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/update_hint"
+                android:textColor="#595a5b"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/moderator_add_offer_sixth_fixed_offer_edit_text"
+                app:layout_constraintStart_toStartOf="@id/moderator_add_offer_sixth_fixed_offer_edit_text"
+                app:layout_constraintTop_toBottomOf="@id/moderator_add_offer_sixth_fixed_offer_edit_text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/addOffer_progressBarHolder"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.4"
+        android:animateLayoutChanges="true"
+        android:background="#000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

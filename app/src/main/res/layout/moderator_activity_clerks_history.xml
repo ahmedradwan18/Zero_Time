@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf2fe"
+    android:layoutDirection="ltr"
+    tools:context=".Moderator.ModeratorClerksHistory">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clerkHistory_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible">
+        <ImageView
+            android:id="@+id/clerkHistory_no_result_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/noresult"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/clerkHistory_no_result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DarkBlue"
+            android:textStyle="bold"
+            android:textSize="@dimen/_24ssp"
+            android:text="@string/no_segel_found_txt"
+            android:fontFamily="@font/tajwal"
+            app:layout_constraintTop_toBottomOf="@id/clerkHistory_no_result_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_clerks_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_slide_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_clerk_history"
+        android:visibility="invisible"/>
+    <ProgressBar
+        android:id="@+id/clerkHistory_fragment_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
