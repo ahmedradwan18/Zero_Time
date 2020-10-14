@@ -144,11 +144,7 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        <activity
-            android:name=".User.History"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" /> <!-- Global -->
+
         <activity
             android:name=".User.SplashScreen"
             android:configChanges="orientation"
